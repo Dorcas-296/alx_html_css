@@ -1,43 +1,107 @@
-# alx_html_css
-# CSS Advanced Project
+Headphones
+📌 Project Overview
 
-## Overview
-This project is part of the ALX HTML/CSS curriculum. The goal is to style an HTML page using advanced CSS techniques, focusing on layout, design, and responsiveness.
+Headphones is a responsive web page built from a Figma design provided by ALX. The goal of this project is to accurately convert a professional UI design into clean, semantic HTML and modern CSS while respecting responsiveness, interactions, and layout constraints.
 
-## Objectives
-- Use Flexbox, CSS Grid, pseudo-classes, and animations.
-- Ensure the page is responsive on different devices.
-- Match the Figma design with correct fonts, colors, and images.
+The project demonstrates attention to detail, proper use of CSS, and the ability to translate design specifications into functional code.
 
-## Files
-- `README.md` – This file describing the project.
-- `index.html` – HTML page styled with CSS.
+🎨 Figma Design
 
-## How to View
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Dorcas-296/alx_html_css.git
-Navigate to the project folder:
+The design for this project was provided as a downloadable Figma (.fig) file.
 
-cd alx_html_css/css_advanced
-Open index.html in your browser.
+To access the design:
 
-Resources
-Figma Design File: (https://www.figma.com/design/dyYL6Ku4WG7vsdpwvlcJZC/Homepage?node-id=0-1&t=PGcWO7784visOsFg-1)
+Download the .fig file from the provided link
 
-Fonts: Source Sans Pro, Spin Cycle OT
+Open https://www.figma.com/files
 
-Images: Provided in the project resources
+Click New → Import, or drag and drop the .fig file into Figma
 
-Author
+Click “Duplicate to Drafts” to inspect all design details
+
+🔗 Design Source:
+https://savanna.alxafrica.com/rltoken/BzcwTuQuVymfPmk1ivgdeg
+
+✨ Features
+
+Pixel-accurate implementation from Figma
+
+Fully responsive layout
+
+Mobile view activates at screen width ≤ 480px
+
+Hover and active interactions for links and buttons
+
+Centered content with a maximum width of 1000px
+
+Custom fonts as specified in the design
+
+📱 Responsiveness
+
+The layout switches to a mobile version when the screen width is 480px or less using CSS media queries.
+
+@media (max-width: 480px) {
+    /* Mobile styles */
+}
+
+🎯 Interactions
+Links
+a:hover,
+a:active {
+    color: #FF6565;
+}
+
+Buttons
+button:hover,
+button:active {
+    opacity: 0.9;
+}
+
+🧱 Layout Constraint
+
+All main content is centered and constrained to a maximum width of 1000px.
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+🔤 Fonts Used
+
+The following fonts are used in this project as specified in the Figma design:
+
+Source Sans Pro
+
+Spin Cycle OT
+
+If these fonts are not available on your system, they should be installed to ensure accurate rendering.
+
+🛠 Technologies Used
+
+HTML5
+
+CSS
+
+Figma
+
+📂 Project Structure
+headphones/
+│── index.html
+│── styles.css
+│── README.md
+
+🚀 How to Run the Project
+
+Clone this repository
+
+Open index.html in your browser
+
+Ensure required fonts are installed
+
+Resize the browser window to test responsiveness
+
+👤 Author
+
 Dorcas Okeleji
-GitHub Profile
-
-
-3. Save the file.  
-4. In your terminal, run:
-
-```bash
-git add README.md
-git commit -m "Add README for CSS Advanced project"
-git push
+Front-End Developer
+ALX Software Engineering Program
