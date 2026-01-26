@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +24,9 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 
+*{
+    box-sizing: border-box;
+}
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -32,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: Sour;
 }
 ol, ul {
 	list-style: none;
@@ -52,6 +55,11 @@ table {
 
 /* start figma styling */
 
+@font-face {
+  font-family: 'Source Sans Pro';      /* name you’ll use in CSS */
+  src: url('../fonts/Source-Sans-Pro.otf') format('opentype');
+}
+
 .hero-section {
     background-image: url('./images/Object.png');
     object-fit: center;
@@ -59,7 +67,7 @@ table {
     background-position: center;
     position: relative;
     padding-top: 200px;
-    height: 120vh;
+    height: 140vh;
 }
 
 header {
@@ -136,9 +144,9 @@ h1 {
     height: 120px; 
 }
 
-.tutors-container div {
+.tutors-container div{
     width: 150px;
-    height: 237px;
+    height: auto;
     color: white;
     text-align: center;
 }
@@ -156,5 +164,278 @@ h1 {
 
 .purple-text {
     color: #C271FF;
-    transition: ;
+    font-weight: bold;
 } 
+
+.quotes-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 10px 8px 10px 8px;
+    justify-content: center;
+    background-color: #C271FF;
+    color: white;
+
+}
+
+.quote-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px; 
+}
+
+.quotes-container-text {
+    text-align: justify;
+    font-size: 22;
+    font-weight: normal;
+    
+}
+
+.quotee-name {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.weather {
+    margin-top: 6px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 22;
+    font-family: Source Sans Pro;
+}
+
+.tutor-section {
+    margin: 40px 0 0 0;
+    overflow-x: hidden;
+    width: 100%;
+
+}.tutors-profile {
+    font-weight: normal;
+    font-size: 32;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.diagonal {
+    /* display: inline-block; */
+    width: 315px;
+
+}
+
+.diagonal-smile {
+    width: 100%;
+    /* margin-left: 10px; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    height: 50px;
+}
+
+.massey {
+    width: 50px;   
+}
+
+.massey-name {
+ width: 150px;
+ 
+}
+
+.massey-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 7px;
+}
+
+.stars {
+    color: #C271FF;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.fade-star {
+    color: gray;
+}
+
+
+
+.smile-text {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20px;
+    color: #071629;
+    width: 106px;
+    height: 20px;
+}
+
+.smile-para {
+    width: 260px;
+    line-height: 20px;
+    margin-left: 20px;
+    color: gray;
+}
+
+.comment-mins {
+    width: 50px;
+    margin-left: 20px;
+    color: #C271FF;
+}
+
+.star-container {
+    display: flex;
+    gap: 70px;
+}
+
+
+.smile-post-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.membership-container {
+    background-color: #071629;
+    align-content: center;
+    width: 100%;
+    /* margin-top: 70px; */
+    margin: 70px auto;
+}
+
+.smile-head {
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.smile-title {
+    color: white;
+    font-weight: normal;
+    width: 100px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.smile-paragraph {
+    color: white;
+    text-align: center;
+    width: 150px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 10px;   
+}
+
+.membership-header {
+    color: white;
+    font-weight: normal;
+    font-size: large;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.smile-sub {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.registration-button {
+    display: block;
+    margin: 0 auto;
+    background-color: #C271FF;
+    border-radius: 22px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    margin-top: 25px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.faq-head {
+    text-align: center;
+    font-size: large;
+    color: #071629;
+    margin-left: 10px;
+    margin-top: 40px;
+    
+}
+
+.FAQ-head {
+  font-weight: 16px;  
+  color: #071629;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.FAQ-paragraph {
+    font-weight: 16px;
+    font-size: small;
+    color: #071629;
+    width: 320px;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.FAQ-section {
+    display: flex;
+    gap: 70px;
+    /* margin-left: 20px; */
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.FAQ-container {
+    /* margin: 0 auto; */
+}
+
+.footer-container {
+    background-color: #071629;
+    align-content: center;
+    margin-top: 70px;
+}
+
+.footer-social-media {
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.smile-year {  
+  color: white;
+  font-weight: lighter;
+  font-size: small;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* .footer-logo {
+    
+} */
+
+.footer-icon-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 160px;
+}
